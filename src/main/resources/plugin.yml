@@ -1,0 +1,8 @@
+name: Basic
+version: '${project.version}'
+main: io.github.dotheflopboy.basic.Basic
+api-version: 1.18
+prefix: Basic
+authors: [ DoTheFlopBoy ]
+description: Just another basic plugin.
+website: dotheflopboy.github.io
