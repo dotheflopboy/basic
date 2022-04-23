@@ -6,3 +6,27 @@ prefix: Basic
 authors: [ DoTheFlopBoy ]
 description: Just another basic plugin.
 website: dotheflopboy.github.io
+
+commands:
+  fly:
+    description: Sets players Flymode.
+    usage: /<command>
+  god:
+    description: Sets players Godmode.
+    usage: /<command>
+  feed:
+    description: Feeds a player.
+    usage: /<command>
+  heal:
+    description: Heals a player.
+    usage: /<command>
+  clearinventory:
+    description: Clears players Inventory.
+    usage: /<command>
+  gamemode:
+    description: Sets players gamemode.
+    usage: /<command>
+    aliases: [gm, gms, gmc, gma, gmsp]
+  colors:
+    description: See mc color codes.
+    usage: /<command>
