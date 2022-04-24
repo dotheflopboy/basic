@@ -29,7 +29,7 @@ public class WorkbenchCommand implements CommandExecutor {
                     Player target = p.getServer().getPlayer(args[0]);
 
 
-                    if(!p.hasPermission("basic.command.heal.others")){
+                    if(!p.hasPermission("basic.command.workbench.others")){
                         p.sendMessage(Messages.message("messages.info.noPermission"));
                         return true;
                     }
@@ -60,7 +60,7 @@ public class WorkbenchCommand implements CommandExecutor {
                     Player target = p.getServer().getPlayer(args[0]);
 
 
-                    if(!p.hasPermission("basic.command.heal.others")){
+                    if(!p.hasPermission("basic.command.workbench.others")){
                         p.sendMessage(Messages.message("messages.info.noPermission"));
                         return true;
                     }
