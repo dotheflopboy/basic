@@ -1,6 +1,6 @@
 package io.github.dotheflopboy.basic.commands;
 
-import io.github.dotheflopboy.basic.Basic;
+import io.github.dotheflopboy.basic.util.Messages;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.command.Command;
@@ -9,7 +9,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Objects;
 
 public class ColorCommand implements CommandExecutor {
 
@@ -23,7 +22,7 @@ public class ColorCommand implements CommandExecutor {
                 if (args.length == 0) {
 
                     if (!p.hasPermission("basic.command.colors")) {
-                        p.sendMessage(Objects.requireNonNull(Basic.getPlugin().getConfig().getString("messages.info.noPermission")));
+                        p.sendMessage(Messages.message("messages.info.noPermission"));
                         return true;
                     }
 
@@ -45,7 +44,7 @@ public class ColorCommand implements CommandExecutor {
             }
 
         } else {
-            sender.sendMessage("[Basic] Dieser Befehl geht nur im Spiel!");
+            sender.sendMessage(Messages.message("messages.info.noConsoleCommand"));
         }
         return true;
     }

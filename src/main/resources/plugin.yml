@@ -30,3 +30,13 @@ commands:
   colors:
     description: See mc color codes.
     usage: /<command>
+  basic:
+    description: Plugins main Command.
+    usage: /<command>
+  repair:
+    description: Repairs the Handitem.
+    usage: /<command>
+  workbench:
+     description: Opens a workbench.
+     usage: /<command>
+     aliases: [craft]
