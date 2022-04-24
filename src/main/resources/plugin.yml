@@ -40,3 +40,10 @@ commands:
      description: Opens a workbench.
      usage: /<command>
      aliases: [craft]
+  spawn:
+      description: Sets/Teleport to the Spawn.
+      usage: /<command>
+      aliases: [setspawn,delspawn]
+  suicide:
+      description: Kills you.
+      usage: /<command>

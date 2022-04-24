@@ -73,6 +73,12 @@ public final class Basic extends JavaPlugin {
         config.addDefault("messages.commands.workbench.noTarget", "&8[&6Basic&8] &cDer Spieler ist nicht online.");
         config.addDefault("messages.commands.workbench.other", "&8[&6Basic&8] &aDu hast dem Spieler eine Werkbank geöffnet.");
         config.addDefault("messages.commands.workbench.self", "&8[&6Basic&8] &aDir wurde eine Werkbank geöffnet.");
+        config.addDefault("messages.commands.spawn.noTarget", "&8[&6Basic&8] &cDer Spieler ist nicht online.");
+        config.addDefault("messages.commands.spawn.noSpawnPoint", "&8[&6Basic&8] &aEs existiert kein Spawn.");
+        config.addDefault("messages.commands.spawn.teleported.self", "&8[&6Basic&8] &aDu wurdest zum Spawn teleportiert.");
+        config.addDefault("messages.commands.spawn.teleported.other", "&8[&6Basic&8] &aDu hast den Spieler zum Spawn teleportiert.");
+        config.addDefault("messages.commands.spawn.setspawn.set.yourLocation", "&8[&6Basic&8] &aDer Spawn wurde auf deine Position gesetzt.");
+        config.addDefault("messages.commands.spawn.delspawn", "&8[&6Basic&8] &aDer Spawn wurde erfolgreich gelöscht.");
         config.options().copyDefaults(true);
         saveConfig();
 
@@ -92,6 +98,8 @@ public final class Basic extends JavaPlugin {
         Objects.requireNonNull(this.getCommand("repair")).setExecutor(new RepairCommand());
         Objects.requireNonNull(this.getCommand("repair")).setTabCompleter(new RepairTabComplete());
         Objects.requireNonNull(this.getCommand("workbench")).setExecutor(new WorkbenchCommand());
+        Objects.requireNonNull(this.getCommand("spawn")).setExecutor(new SpawnCommand());
+        Objects.requireNonNull(this.getCommand("suicide")).setExecutor(new SuicideCommand());
         Bukkit.getPluginManager().registerEvents(new ChatListeners(),this);
         Bukkit.getPluginManager().registerEvents(new GodListeners(), this);
         Bukkit.getPluginManager().registerEvents(new JoinListeners(),this);
