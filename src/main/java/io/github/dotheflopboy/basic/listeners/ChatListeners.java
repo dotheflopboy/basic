@@ -1,9 +1,6 @@
 package io.github.dotheflopboy.basic.listeners;
 
 import io.github.dotheflopboy.basic.Basic;
-import io.github.dotheflopboy.basic.util.Messages;
-import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.TextReplacementConfig;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;

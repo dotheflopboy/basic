@@ -6,6 +6,7 @@ prefix: Basic
 authors: [ DoTheFlopBoy ]
 description: Just another basic plugin.
 website: dotheflopboy.github.io
+softdepend: ["PlaceholderAPI"]
 
 commands:
   fly:

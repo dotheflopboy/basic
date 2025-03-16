@@ -1,8 +1,11 @@
 package io.github.dotheflopboy.basic.listeners;
 
+import io.github.dotheflopboy.basic.Basic;
 import io.github.dotheflopboy.basic.util.Messages;
+import me.clip.placeholderapi.PlaceholderAPI;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextReplacementConfig;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -14,9 +17,10 @@ public class JoinListeners implements Listener {
     public void onPlayerJoins(PlayerJoinEvent e){
 
         Player p = e.getPlayer();
-        Component messageFromConfig = Messages.message("messages.playerJoin");
-        TextReplacementConfig replacementConfig = TextReplacementConfig.builder().match("%player%").replacement(p.getName()).build();
-        Component message = messageFromConfig.replaceText(replacementConfig);
+        String joinText = Basic.getPlugin().getConfig().getString("messages.playerJoin");
+        joinText = PlaceholderAPI.setPlaceholders(p, joinText);
+        final Component message = LegacyComponentSerializer.legacyAmpersand().deserialize(joinText);
+
         e.joinMessage(message);
 
 
