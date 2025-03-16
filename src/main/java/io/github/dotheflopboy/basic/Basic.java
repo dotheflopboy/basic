@@ -6,6 +6,7 @@ import io.github.dotheflopboy.basic.tabcompleters.BasicTabComplete;
 import io.github.dotheflopboy.basic.tabcompleters.GamemodeTabComplete;
 import io.github.dotheflopboy.basic.tabcompleters.RepairTabComplete;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -79,6 +80,7 @@ public final class Basic extends JavaPlugin {
         config.addDefault("messages.commands.spawn.teleported.other", "&8[&6Basic&8] &aDu hast den Spieler zum Spawn teleportiert.");
         config.addDefault("messages.commands.spawn.setspawn.set.yourLocation", "&8[&6Basic&8] &aDer Spawn wurde auf deine Position gesetzt.");
         config.addDefault("messages.commands.spawn.delspawn", "&8[&6Basic&8] &aDer Spawn wurde erfolgreich gelöscht.");
+        config.addDefault("messages.chatformat", "%player% &8»&r %msg%");
         config.options().copyDefaults(true);
         saveConfig();
 

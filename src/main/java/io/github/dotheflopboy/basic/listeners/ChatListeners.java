@@ -1,5 +1,9 @@
 package io.github.dotheflopboy.basic.listeners;
 
+import io.github.dotheflopboy.basic.Basic;
+import io.github.dotheflopboy.basic.util.Messages;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.TextReplacementConfig;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -18,7 +22,12 @@ public class ChatListeners implements Listener {
         }
 
 
-       // e.setFormat("%s"+ ChatColor.DARK_GRAY + " » " + ChatColor.RESET + "%s");
+
+        String text = Basic.getPlugin().getConfig().getString("messages.chatformat");
+        String format = ChatColor.translateAlternateColorCodes('&', text);
+
+        e.setFormat(format.replace("%player%", "%s").replace("%msg%", "%s"));
+
 
 
         if(p.hasPermission("basic.chat.ping")) {
