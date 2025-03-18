@@ -26,18 +26,16 @@ public class ColorCommand implements CommandExecutor {
                         return true;
                     }
 
-                    Component line = MiniMessage.miniMessage().deserialize("<yellow>------------------------------------------------");
-                    Component color = MiniMessage.miniMessage().deserialize("<black>&0 <dark_blue>&1 <dark_green>&2 <dark_aqua>&3 <dark_red>&4 <dark_purple>&5 <gold>&6 <gray>&7");
-                    Component color2 = MiniMessage.miniMessage().deserialize("<dark_gray>&8 <blue>&9 <green>&a <aqua>&b <red>&c <light_purple>&d <yellow>&e <white>&f");
-                    Component format = MiniMessage.miniMessage().deserialize("&l = <bold>Fett</bold>  &o = <i>kursiv</i>  &n = <u>Unterstrichen</u>");
-                    Component format2 = MiniMessage.miniMessage().deserialize("&m = <st>Durchgestrichen</st>  &k = <obf>Hallo</obf>  &r = <yellow>zurü<reset>ckgesetzt");
 
-                    p.sendMessage(line);
-                    p.sendMessage(color);
-                    p.sendMessage(color2);
-                    p.sendMessage(format);
-                    p.sendMessage(format2);
-                    p.sendMessage(line);
+                    final Component component = MiniMessage.miniMessage().deserialize("<dark_gray>------------------------------------------------<newline>"+
+                            "<black>&0 <dark_blue>&1 <dark_green>&2 <dark_aqua>&3 <dark_red>&4 <dark_purple>&5 <gold>&6 <gray>&7<newline>"+
+                            "<dark_gray>&8 <blue>&9 <green>&a <aqua>&b <red>&c <light_purple>&d <yellow>&e <white>&f<newline>"+
+                            "&l = <bold>Fett</bold>  &o = <i>kursiv</i>  &n = <u>Unterstrichen</u><newline>"+
+                            "&m = <st>Durchgestrichen</st>  &k = <obf>Hallo</obf>  &r = <yellow>zurü<reset>ckgesetzt<newline>"+
+                            "<dark_gray>------------------------------------------------"
+                    );
+
+                    p.sendMessage(component);
 
                 }
 

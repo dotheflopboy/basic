@@ -48,3 +48,6 @@ commands:
   suicide:
       description: Kills you.
       usage: /<command>
+  itemframe:
+    description: Manage itemframes.
+    usage: /<command>

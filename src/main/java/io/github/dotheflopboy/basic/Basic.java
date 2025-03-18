@@ -51,6 +51,7 @@ public final class Basic extends JavaPlugin {
         Objects.requireNonNull(this.getCommand("workbench")).setExecutor(new WorkbenchCommand());
         Objects.requireNonNull(this.getCommand("spawn")).setExecutor(new SpawnCommand());
         Objects.requireNonNull(this.getCommand("suicide")).setExecutor(new SuicideCommand());
+        Objects.requireNonNull(this.getCommand("itemframe")).setExecutor(new ItemframeCommand());
         Bukkit.getPluginManager().registerEvents(new ChatListeners(),this);
         Bukkit.getPluginManager().registerEvents(new GodListeners(), this);
         Bukkit.getPluginManager().registerEvents(new JoinListeners(),this);
