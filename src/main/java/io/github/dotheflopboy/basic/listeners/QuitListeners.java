@@ -4,6 +4,7 @@ import io.github.dotheflopboy.basic.Basic;
 import me.clip.placeholderapi.PlaceholderAPI;
 import net.kyori.adventure.text.Component;
 
+import net.kyori.adventure.text.minimessage.MiniMessage;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -18,9 +19,10 @@ public class QuitListeners implements Listener {
         Player p = e.getPlayer();
         String quitText = Basic.getPlugin().getConfig().getString("messages.playerQuit");
         quitText = PlaceholderAPI.setPlaceholders(p, quitText);
-        final Component message = LegacyComponentSerializer.legacyAmpersand().deserialize(quitText);
+        //final Component message = LegacyComponentSerializer.legacyAmpersand().deserialize(quitText);
+        final Component msg = MiniMessage.miniMessage().deserialize(quitText);
 
-        e.quitMessage(message);
+        e.quitMessage(msg);
 
 
     }

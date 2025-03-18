@@ -1,6 +1,10 @@
 package io.github.dotheflopboy.basic.listeners;
 
 import io.github.dotheflopboy.basic.Basic;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.TextReplacementConfig;
+import net.kyori.adventure.text.minimessage.MiniMessage;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -23,8 +27,20 @@ public class ChatListeners implements Listener {
         String text = Basic.getPlugin().getConfig().getString("messages.chatformat");
         String format = ChatColor.translateAlternateColorCodes('&', text);
 
-        e.setFormat(format.replace("%player%", "%s").replace("%msg%", "%s"));
+        TextReplacementConfig replacement1 = TextReplacementConfig.builder()
+                .match("\\%player\\%")
+                .replacement("%s")
+                .build();
+        TextReplacementConfig replacement2 = TextReplacementConfig.builder()
+                .match("\\%msg\\%")
+                .replacement("%s")
+                .build();
 
+
+        final Component chatFormat = MiniMessage.miniMessage().deserialize(text).replaceText(replacement1).replaceText(replacement2);
+
+        e.setFormat(ChatColor.translateAlternateColorCodes('&',LegacyComponentSerializer.legacyAmpersand().serialize(chatFormat)));
+        // format.replace("%player%", "%s").replace("%msg%", "%s")
 
 
         if(p.hasPermission("basic.chat.ping")) {

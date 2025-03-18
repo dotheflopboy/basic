@@ -1,72 +1,72 @@
 messages:
-  chatformat: '%player% <dark_gray>»&r %msg%'
+  chatformat: '%player% <dark_gray>»<reset> %msg%'
   info:
-    noPermission: '<dark_gray>[&6Basic<dark_gray>] <red>Du hast keine Rechte dafür!'
-    noConsoleCommand: '<dark_gray>[&6Basic<dark_gray>] <red>Dieser Befehl geht nur im Spiel!'
+    noPermission: '<dark_gray>[<gold>Basic<dark_gray>] <red>Du hast keine Rechte dafür!'
+    noConsoleCommand: '<dark_gray>[<gold>Basic<dark_gray>] <red>Dieser Befehl geht nur im Spiel!'
   commands:
     basic:
-      configReload: '<dark_gray>[&6Basic<dark_gray>] <green>Die Plugin Config wurde erneut geladen.'
+      configReload: '<dark_gray>[<gold>Basic<dark_gray>] <green>Die Plugin Config wurde erneut geladen.'
     gamemode:
-      usage: '<dark_gray>[&6Basic<dark_gray>] <green>Verwende /gamemode [survival/creative/adventure/spectator].'
+      usage: '<dark_gray>[<gold>Basic<dark_gray>] <green>Verwende /gamemode [survival/creative/adventure/spectator].'
       survival:
-        self: '<dark_gray>[&6Basic<dark_gray>] <green>Dein Gamemode wurde auf Survival gesetzt.'
-        other: '<dark_gray>[&6Basic<dark_gray>] <green>Du hast den Gamemode des Spielers auf Survival gesetzt.'
+        self: '<dark_gray>[<gold>Basic<dark_gray>] <green>Dein Gamemode wurde auf Survival gesetzt.'
+        other: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du hast den Gamemode des Spielers auf Survival gesetzt.'
       creative:
-        self: '<dark_gray>[&6Basic<dark_gray>] <green>Dein Gamemode wurde auf Creative gesetzt.'
-        other: '<dark_gray>[&6Basic<dark_gray>] <green>Du hast den Gamemode des Spielers auf Creative gesetzt.'
+        self: '<dark_gray>[<gold>Basic<dark_gray>] <green>Dein Gamemode wurde auf Creative gesetzt.'
+        other: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du hast den Gamemode des Spielers auf Creative gesetzt.'
       adventure:
-        self: '<dark_gray>[&6Basic<dark_gray>] <green>Dein Gamemode wurde auf Adventure gesetzt.'
-        other: '<dark_gray>[&6Basic<dark_gray>] <green>Du hast den Gamemode des Spielers auf Adventure gesetzt.'
+        self: '<dark_gray>[<gold>Basic<dark_gray>] <green>Dein Gamemode wurde auf Adventure gesetzt.'
+        other: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du hast den Gamemode des Spielers auf Adventure gesetzt.'
       spectator:
-        self: '<dark_gray>[&6Basic<dark_gray>] <green>Dein Gamemode wurde auf Spectator gesetzt.'
-        other: '<dark_gray>[&6Basic<dark_gray>] <green>Du hast den Gamemode des Spielers auf Spectator gesetzt.'
-      noGamemode: '<dark_gray>[&6Basic<dark_gray>] <red>Kein Gamemode ausgewählt.'
-      noTarget: '<dark_gray>[&6Basic<dark_gray>] <red>Der Spieler ist nicht online.'
+        self: '<dark_gray>[<gold>Basic<dark_gray>] <green>Dein Gamemode wurde auf Spectator gesetzt.'
+        other: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du hast den Gamemode des Spielers auf Spectator gesetzt.'
+      noGamemode: '<dark_gray>[<gold>Basic<dark_gray>] <red>Kein Gamemode ausgewählt.'
+      noTarget: '<dark_gray>[<gold>Basic<dark_gray>] <red>Der Spieler ist nicht online.'
     clearinventory:
-      noTarget: '<dark_gray>[&6Basic<dark_gray>] <red>Der Spieler ist nicht online.'
-      self: '<dark_gray>[&6Basic<dark_gray>] <green>Dein Inventar wurde geleert.'
-      other: '<dark_gray>[&6Basic<dark_gray>] <green>Du hast das Inventar des Spielers geleert.'
+      noTarget: '<dark_gray>[<gold>Basic<dark_gray>] <red>Der Spieler ist nicht online.'
+      self: '<dark_gray>[<gold>Basic<dark_gray>] <green>Dein Inventar wurde geleert.'
+      other: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du hast das Inventar des Spielers geleert.'
     feed:
-      noTarget: '<dark_gray>[&6Basic<dark_gray>] <red>Der Spieler ist nicht online.'
-      self: '<dark_gray>[&6Basic<dark_gray>] <green>Du wurdest gesättigt.'
-      other: '<dark_gray>[&6Basic<dark_gray>] <green>Du hast den Spieler gesättigt.'
+      noTarget: '<dark_gray>[<gold>Basic<dark_gray>] <red>Der Spieler ist nicht online.'
+      self: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du wurdest gesättigt.'
+      other: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du hast den Spieler gesättigt.'
     fly:
-      noTarget: '<dark_gray>[&6Basic<dark_gray>] <red>Der Spieler ist nicht online.'
+      noTarget: '<dark_gray>[<gold>Basic<dark_gray>] <red>Der Spieler ist nicht online.'
       self:
-        'on': '<dark_gray>[&6Basic<dark_gray>] <green>Dein Flugmodus wurde auf aktiviert gesetzt.'
-        'off': '<dark_gray>[&6Basic<dark_gray>] <green>Dein Flugmodus wurde auf deaktiviert gesetzt.'
+        'on': '<dark_gray>[<gold>Basic<dark_gray>] <green>Dein Flugmodus wurde auf aktiviert gesetzt.'
+        'off': '<dark_gray>[<gold>Basic<dark_gray>] <green>Dein Flugmodus wurde auf deaktiviert gesetzt.'
       other:
-        'on': '<dark_gray>[&6Basic<dark_gray>] <green>Du hast den Flugmodus des Spielers auf aktiviert gesetzt.'
-        'off': '<dark_gray>[&6Basic<dark_gray>] <green>Du hast den Flugmodus des Spielers auf deaktiviert
+        'on': '<dark_gray>[<gold>Basic<dark_gray>] <green>Du hast den Flugmodus des Spielers auf aktiviert gesetzt.'
+        'off': '<dark_gray>[<gold>Basic<dark_gray>] <green>Du hast den Flugmodus des Spielers auf deaktiviert
           gesetzt.'
     god:
-      noTarget: '<dark_gray>[&6Basic<dark_gray>] <red>Der Spieler ist nicht online.'
+      noTarget: '<dark_gray>[<gold>Basic<dark_gray>] <red>Der Spieler ist nicht online.'
       self:
-        'on': '<dark_gray>[&6Basic<dark_gray>] <green>Du bist nun im Gottmodus!'
-        'off': '<dark_gray>[&6Basic<dark_gray>] <green>Du bist nun nicht mehr im Gottmodus!'
+        'on': '<dark_gray>[<gold>Basic<dark_gray>] <green>Du bist nun im Gottmodus!'
+        'off': '<dark_gray>[<gold>Basic<dark_gray>] <green>Du bist nun nicht mehr im Gottmodus!'
     heal:
-      noTarget: '<dark_gray>[&6Basic<dark_gray>] <red>Der Spieler ist nicht online.'
-      self: '<dark_gray>[&6Basic<dark_gray>] <green>Du wurdest geheilt.'
-      other: '<dark_gray>[&6Basic<dark_gray>] <green>Du hast den Spieler geheilt.'
+      noTarget: '<dark_gray>[<gold>Basic<dark_gray>] <red>Der Spieler ist nicht online.'
+      self: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du wurdest geheilt.'
+      other: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du hast den Spieler geheilt.'
     repair:
-      noTarget: '<dark_gray>[&6Basic<dark_gray>] <red>Der Spieler ist nicht online.'
+      noTarget: '<dark_gray>[<gold>Basic<dark_gray>] <red>Der Spieler ist nicht online.'
       self:
-        noItem: '<dark_gray>[&6Basic<dark_gray>] <green>Du hast kein Item in deiner Hand.'
-        repaired: '<dark_gray>[&6Basic<dark_gray>] <green>Das Item in deiner Hand wurde repariert.'
-        repairedAll: '<dark_gray>[&6Basic<dark_gray>] <green>Alle Items in deinem Inventar wurden repariert.'
+        noItem: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du hast kein Item in deiner Hand.'
+        repaired: '<dark_gray>[<gold>Basic<dark_gray>] <green>Das Item in deiner Hand wurde repariert.'
+        repairedAll: '<dark_gray>[<gold>Basic<dark_gray>] <green>Alle Items in deinem Inventar wurden repariert.'
     workbench:
-      noTarget: '<dark_gray>[&6Basic<dark_gray>] <red>Der Spieler ist nicht online.'
-      other: '<dark_gray>[&6Basic<dark_gray>] <green>Du hast dem Spieler eine Werkbank geöffnet.'
-      self: '<dark_gray>[&6Basic<dark_gray>] <green>Dir wurde eine Werkbank geöffnet.'
+      noTarget: '<dark_gray>[<gold>Basic<dark_gray>] <red>Der Spieler ist nicht online.'
+      other: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du hast dem Spieler eine Werkbank geöffnet.'
+      self: '<dark_gray>[<gold>Basic<dark_gray>] <green>Dir wurde eine Werkbank geöffnet.'
     spawn:
-      noTarget: '<dark_gray>[&6Basic<dark_gray>] <red>Der Spieler ist nicht online.'
-      noSpawnPoint: '<dark_gray>[&6Basic<dark_gray>] <green>Es existiert kein Spawn.'
+      noTarget: '<dark_gray>[<gold>Basic<dark_gray>] <red>Der Spieler ist nicht online.'
+      noSpawnPoint: '<dark_gray>[<gold>Basic<dark_gray>] <green>Es existiert kein Spawn.'
       teleported:
-        self: '<dark_gray>[&6Basic<dark_gray>] <green>Du wurdest zum Spawn teleportiert.'
-        other: '<dark_gray>[&6Basic<dark_gray>] <green>Du hast den Spieler zum Spawn teleportiert.'
+        self: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du wurdest zum Spawn teleportiert.'
+        other: '<dark_gray>[<gold>Basic<dark_gray>] <green>Du hast den Spieler zum Spawn teleportiert.'
       setspawn:
         set:
-          yourLocation: '<dark_gray>[&6Basic<dark_gray>] <green>Der Spawn wurde auf deine Position gesetzt.'
-      delspawn: '<dark_gray>[&6Basic<dark_gray>] <green>Der Spawn wurde erfolgreich gelöscht.'
+          yourLocation: '<dark_gray>[<gold>Basic<dark_gray>] <green>Der Spawn wurde auf deine Position gesetzt.'
+      delspawn: '<dark_gray>[<gold>Basic<dark_gray>] <green>Der Spawn wurde erfolgreich gelöscht.'
   playerJoin: '<dark_gray>[<green>+<dark_gray>]<reset> %player_name%'
   playerQuit: '<dark_gray>[<red>-<dark_gray>]<reset> %player_name%'
